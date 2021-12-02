@@ -12,7 +12,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-sql = "INSERT INTO logger (time, temper) VALUES (%s, %s)" #Základní insert příkaz -> NEMĚNÍ SE
+sql = "INSERT INTO logger (temp, time) VALUES (%s, %s)" #Základní insert příkaz -> NEMĚNÍ SE
 
 while True:
     #generování hodnot
