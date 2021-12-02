@@ -1,6 +1,8 @@
 # Zapisovač hodnot do databáze - python template
 
-Jednoduchá aplikace na zapisovaní hodnot do tabulky¨
+Jednoduchá aplikace na zapisovaní hodnot do tabulky
+
+update programu ve složce s gitem **git fetch** 
 
 
 ## Instalace LAMP
@@ -21,3 +23,8 @@ sudo mysql -uroot -p
 grant all privileges on *.* to 'phpmyadmin'@'localhost';
 flush privileges;
 quit
+
+
+## Instalace knihoven
+pip install mysql-connector-python
+pip install gpiozero
