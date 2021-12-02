@@ -27,7 +27,7 @@ while True:
     print(dt_string)
 
     #zapisování do databáze
-    val = (cpu, dt_string) #hodnoty které budeme simulovat -> MĚNÍ SE
+    val = (cpu.temperature, dt_string) #hodnoty které budeme simulovat -> MĚNÍ SE
     mycursor.execute(sql, val)
     mydb.commit()
     print(mycursor.rowcount, "record inserted.")
